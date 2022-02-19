@@ -3,8 +3,10 @@
   "include": [],
   "extends": "./tsconfig.shared.json",
   "references": [
+    {"path": "./packages/gha-helper"},
     {"path": "./packages/commit-lint"},
-    {"path": "./packages/commit-lint-2"},
-    {"path": "./packages/commit-lint-3"}
+    {"path": "./packages/cli-printer"},
+    {"path": "./packages/github-check-pr-title"},
+    {"path": "./packages/moonlight-release"}
   ]
 }
