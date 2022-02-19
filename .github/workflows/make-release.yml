@@ -1,4 +1,4 @@
-name: 'Make a release for us'
+name: '🌓  Make a release for us'
 on:
   workflow_dispatch:
     inputs:
