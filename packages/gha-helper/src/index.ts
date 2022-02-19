@@ -12,7 +12,7 @@ export const getPullRequest = () => {
     }
 }
 
-export const inputs = (key?: string) => {
+export const inputsGhaParams = (key?: string) => {
     const allInputs = getContext?.payload?.inputs || [];
     return key ? allInputs?.[key] : allInputs;
 }
