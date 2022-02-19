@@ -1,8 +1,10 @@
 import * as core from '@actions/core'
-
-
+import { getContext } from '@moon-scripts/gha-helper';
+import { renderPrettyJson } from '@moon-scripts/cli-printer';
 
 (() => {
-    const myInput = core.getInput('versionToRelease')
-    console.log('OUIIIIIIIIII', myInput);
+
+
+    renderPrettyJson(getContext?.payload?.inputs)
+
 })()
