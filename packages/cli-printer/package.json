@@ -1,0 +1,10 @@
+{
+  "name": "@moon-scripts/cli-printer",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "src": "./src",
+  "dependencies": {
+    "@types/prettyjson": "^0.0.30",
+    "prettyjson": "^1.2.5"
+  }
+}

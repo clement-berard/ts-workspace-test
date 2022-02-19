@@ -1,0 +1,31 @@
+name: '🏷 Check pull request title'
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+
+jobs:
+  pullRequestTitle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set Node.js 17.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build Typescript
+        run: yarn build
+
+      - name: Run examples
+        run: node packages/commit-lint/dist/index.js
+
+      - name: Run NodeTitleCactus
+        run: node packages/github-check-pr-title/dist/index.js
