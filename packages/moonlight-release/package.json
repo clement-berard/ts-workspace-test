@@ -4,6 +4,9 @@
   "main": "dist/",
   "src": "./src",
   "license": "MIT",
+  "dependencies": {
+    "semver": "^7.3.5"
+  },
   "devDependencies": {
     "@actions/core": "^1.6.0",
     "@moon-scripts/cli-printer": "1.0.0",
