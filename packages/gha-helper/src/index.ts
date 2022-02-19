@@ -12,4 +12,9 @@ export const getPullRequest = () => {
     }
 }
 
+export const inputs = (key?: string) => {
+    const allInputs = getContext?.payload?.inputs || [];
+    return key ? allInputs?.[key] : allInputs;
+}
+
 export const pullRequest = getPullRequest();
