@@ -1,0 +1,8 @@
+{
+  "name": "@moon-scripts/commit-lint-2",
+  "version": "1.0.0",
+  "main": "dist/",
+  "types": "dist/types",
+  "src": "./src",
+  "license": "MIT"
+}

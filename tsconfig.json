@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "include": [],
+  "extends": "./tsconfig.shared.json",
+  "references": [
+    {"path": "./packages/commit-lint"},
+    {"path": "./packages/commit-lint-2"},
+    {"path": "./packages/commit-lint-3"}
+  ]
+}

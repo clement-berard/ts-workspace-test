@@ -1,0 +1,11 @@
+{
+  "name": "@moon-scripts/commit-lint-3",
+  "version": "1.0.0",
+  "main": "dist/",
+  "src": "./src",
+  "types": "dist/types",
+  "license": "MIT",
+  "dependencies": {
+    "@moon-scripts/commit-lint-2": "1.0.0"
+  }
+}
