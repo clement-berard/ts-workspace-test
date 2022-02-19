@@ -10,6 +10,7 @@
   "devDependencies": {
     "@actions/core": "^1.6.0",
     "@moon-scripts/cli-printer": "1.0.0",
-    "@moon-scripts/gha-helper": "1.0.0"
+    "@moon-scripts/gha-helper": "1.0.0",
+    "@types/semver": "^7.3.9"
   }
 }
