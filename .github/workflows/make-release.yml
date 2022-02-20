@@ -26,6 +26,3 @@ jobs:
 
       - name: Check version
         run: node packages/moonlight-release/dist/steps/checkVersion.js
-
-      - name: Le chapon
-        run: node packages/moonlight-release/dist/index.js
