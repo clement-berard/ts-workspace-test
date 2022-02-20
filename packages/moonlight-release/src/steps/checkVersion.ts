@@ -10,6 +10,7 @@ import { inputsGhaParams } from '@moon-scripts/gha-helper';
     if(isValid){
         process.exit(0);
     } else {
+        console.log(`Version ${inputVersion} is not a semver`);
         process.exit(1);
     }
 
