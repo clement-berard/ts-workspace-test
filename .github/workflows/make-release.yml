@@ -1,9 +1,9 @@
-name: 'Make a release for us'
+name: '🌓  Make a release for us'
 on:
   workflow_dispatch:
     inputs:
       versionToRelease:
-        description: 'Version to release'
+        description: 'Version (1.X.X, not v1.X.X)'
         required: true
 
 jobs:
@@ -25,4 +25,4 @@ jobs:
         run: yarn build
 
       - name: Check version
-        run: node packages/commit-lint/dist/index.js
+        run: node packages/moonlight-release/dist/steps/checkVersion.js
